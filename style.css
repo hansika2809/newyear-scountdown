@@ -1,0 +1,105 @@
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Ensures the body and html span the full viewport */
+    overflow: hidden; /* Prevents scrollbars if content overflows */
+  }
+  /* Main container to hold the video and content */
+.container {
+  display: flex;
+  height: 100vh; /* Full screen height */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.8px;
+  justify-content: space-between;
+}
+.video-section {
+  flex: 1; /* Takes up 50% of the width */
+  max-width: 50%;
+  position: relative; /* To ensure proper stacking */
+  overflow: hidden; /* Ensures video does not overflow its container */
+}
+
+.video-section video {
+  position: absolute;
+  margin:0%;
+  padding:0%;
+  top: 50%; /* Center the video vertically */
+  left: 50%; /* Center the video horizontally */
+  transform: translate(-50%, -50%); /* Correct alignment */
+  width: 100%; /* Ensures the video fills the width of its container */
+  height: 100%; /* Ensures the video fills the height of its container */
+  object-fit: cover; /* Prevents distortion while covering the container */
+}
+
+.countdown {
+  margin-top: 20px;
+  text-align: auto;
+  
+}
+.countdown-title {
+  font-family: jockey-one;
+  font-size: 30px;
+  color: #fcf9f9;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-left: 0%;
+  margin-right: 0%;
+ 
+}
+.countdown-box {
+  background-image: url('hh.png');/* Semi-transparent black background */
+  padding: 0px;
+  border-radius: 0px;
+  background-position: left;
+  text-align: left;
+  margin-right: -40%;
+  margin-bottom: 39%;
+  margin-left: -36%;
+  margin-top: -30%;
+}
+#countdown {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ed0d0d;
+  letter-spacing: 4px;
+  margin: 10%;
+  margin-top: 8%;
+  padding:80px;
+}
+.preview-button {
+  position: absolute; /* Allows precise positioning */
+  right: 20px; /* Distance from the right edge */
+  bottom: 40px; /* Distance from the bottom edge */
+  /* z-index: 10; Ensures it appears above other elements */
+}
+
+.preview-button button {
+  padding: 0px 0px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff4b5c; /* Nice button color */
+  color: white;
+  border-radius: 5px;
+}
+
+
+/* Right Panel */
+.right-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('hi.png');
+  padding: 200px;
+  margin-bottom: -120%;
+  margin-top: -43%;
+  margin-left:-55%;
+  margin-right:-35%;
+}
+ 
