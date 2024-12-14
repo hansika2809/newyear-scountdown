@@ -18,7 +18,7 @@ function updateCountdown() {
     countdownElement.innerHTML = `${padZero(days)}:${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
   } else {
   
-    countdownElement.innerHTML = url("happy-new.html");
+    countdownElement.innerHTML = url("hansika.html");
     clearInterval(countdownInterval); 
   }
 }
